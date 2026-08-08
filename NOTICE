@@ -1,0 +1,8 @@
+EviGOcc
+Copyright 2026 Kai Zhao and Youchun Xu
+
+This source release contains original EviGOcc reference code. It does not
+redistribute WildOcc, GOOSE-OCC, pretrained foundation-model weights, TT-Occ,
+or either FreeOcc implementation. Those resources retain their respective
+licenses and provider terms.
+

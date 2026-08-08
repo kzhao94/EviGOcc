@@ -1,0 +1,38 @@
+{
+  "wildocc": {
+    "grid": {
+      "minimum": [-20.0, -10.0, -2.0],
+      "maximum": [0.0, 10.0, 6.0],
+      "voxel_size": [0.2, 0.2, 0.2],
+      "shape": [100, 100, 40]
+    },
+    "classes": ["grass", "tree", "bush", "puddle", "mud", "barrier", "rubble"],
+    "gaussian_sigma_m": 0.2,
+    "support_mahalanobis_squared": 9.0,
+    "occupancy_hazard_threshold": 0.6931471805599453,
+    "history_frames": 3,
+    "ppsa": {
+      "top_k": 2,
+      "score_temperature": 0.01,
+      "conflict_margin": 0.02
+    },
+    "rasc": {
+      "conflict_weight": 0.65,
+      "unknown_weight": 0.35,
+      "rare_class_ids": [4, 5, 6, 7]
+    }
+  },
+  "goose_occ": {
+    "grid": {
+      "minimum": [0.0, -16.0, -4.0],
+      "maximum": [50.0, 16.0, 4.0],
+      "voxel_size": [0.25, 0.25, 0.25],
+      "shape": [200, 128, 32]
+    },
+    "classes": ["artificial_structures", "artificial_ground", "natural_ground", "obstacle", "vehicle", "vegetation", "human"],
+    "pixel_stride": 4,
+    "history_frames": 3,
+    "age_decay": 0.75
+  }
+}
+

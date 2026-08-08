@@ -1,0 +1,41 @@
+{
+  "scope": {
+    "split": "validation only",
+    "wildocc_test_accessed": false,
+    "goose_occ_test_accessed": false,
+    "orad_accessed": false,
+    "units": "percent"
+  },
+  "wildocc": {
+    "frames": 1243,
+    "grid_m": 0.2,
+    "methods": {
+      "TT-Occ": {"IoU": 11.1563, "mIoU": 2.7334},
+      "FreeOcc": {"IoU": 7.5043, "mIoU": 4.7815},
+      "EviGOcc-S": {"IoU": 12.7511, "mIoU": 5.9006},
+      "Fused-depth field, Talk2DINO only": {"IoU": 14.1446, "mIoU": 6.8264},
+      "EviGOcc-X": {"IoU": 14.1446, "mIoU": 7.3024}
+    },
+    "factorization_pp": {
+      "depth_construction": {"IoU": 1.3935, "mIoU": 0.9258},
+      "PPSA_at_fixed_geometry": {"IoU": 0.0, "mIoU": 0.4760}
+    },
+    "RASC": {
+      "semantic_error_AUROC_gain": 0.1487,
+      "semantic_error_AUPRC_gain": 0.0591,
+      "AURC_relative_improvement_percent": 31.5796,
+      "top10_error_enrichment": 2.4209
+    }
+  },
+  "goose_occ": {
+    "frames": 490,
+    "grid_m": 0.25,
+    "methods": {
+      "TT-Occ": {"SC_IoU": 2.0228, "SSC_mIoU": 0.9061},
+      "FreeOcc (guarded)": {"SC_IoU": 0.0008, "SSC_mIoU": 0.0003},
+      "EviGOcc-S": {"SC_IoU": 7.6843, "SSC_mIoU": 3.7742},
+      "EviGOcc-T": {"SC_IoU": 11.0561, "SSC_mIoU": 4.7201}
+    }
+  }
+}
+

@@ -1,0 +1,46 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "evigocc"
+version = "0.1.0"
+description = "Training-free evidential Gaussian occupancy for open-vocabulary off-road perception"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {file = "LICENSE"}
+authors = [
+  {name = "Kai Zhao", email = "kzhao94@foxmail.com"},
+  {name = "Youchun Xu", email = "xu56419@126.com"},
+]
+dependencies = [
+  "numpy>=1.24,<3",
+]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "License :: OSI Approved :: Apache Software License",
+  "Programming Language :: Python :: 3",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.4", "ruff>=0.5"]
+vfm-cu118 = [
+  "pillow>=9.5",
+  "torch==2.0.1",
+  "torchvision==0.15.2",
+]
+
+[project.scripts]
+evigocc-demo = "evigocc.demo:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.ruff]
+line-length = 100
+target-version = "py38"

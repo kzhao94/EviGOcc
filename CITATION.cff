@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use EviGOcc, please cite the accompanying paper."
+title: "EviGOcc: Training-Free Evidential Gaussian Occupancy for Open-Vocabulary Off-Road Perception"
+type: software
+version: 0.1.0
+date-released: 2026-08-08
+authors:
+  - family-names: Zhao
+    given-names: Kai
+    email: kzhao94@foxmail.com
+    affiliation: PLA Joint Logistics Support Force University of Engineering
+  - family-names: Xu
+    given-names: Youchun
+    email: xu56419@126.com
+    affiliation: PLA Joint Logistics Support Force University of Engineering
+repository-code: "https://github.com/kzhao94/EviGOcc"
+license: Apache-2.0
+
